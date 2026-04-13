@@ -2,25 +2,59 @@
 #include <string>
 #include "calculadora_logic.h"
 
-using namespace std;
-
 int main() {
-    Calculadora calc;
-    calc.inicializada = false;
-    string linha;
+    std::cout << "oo ee oo (×4)\n"
+    << "\n"
+    << "Miku Miku, you can call me Miku\n"
+    << "Blue hair, blue tie, hiding in your wifi\n"
+    << "Open secrets, anyone can find me\n"
+    << "Hear your music running through my mind\n"
+    << "\n"
+    << "I'm thinking Miku, Miku, oo ee oo (×4)\n"
+    << "\n"
+    << "I'm on top of the world because of you\n"
+    << "All I wanted to do is follow you\n"
+    << "I'll keep singing along to all of you\n"
+    << "I'll keep singing along\n"
+    << "\n"
+    << "I'm thinking Miku, Miku, oo ee oo (×4)\n"
+    << "\n"
+    << "Miku Miku, what's it like to be you?\n"
+    << "Twenty, twenty, looking in the rear-view\n"
+    << "Play me, break me, make me feel like Superman\n"
+    << "You can do anything you want\n"
+    << "\n"
+    << "I'm on top of the world because of you\n"
+    << "All I wanted to do is follow you\n"
+    << "I'll keep singing along to all of you\n"
+    << "I'll keep singing along\n"
+    << "\n"
+    << "I'm on top of the world because of you\n"
+    << "I do nothing that they could never do\n"
+    << "I'll keep playing along with all of you\n"
+    << "I'll keep playing along\n"
+    << "\n"
+    << "I'm thinking Miku, Miku, oo ee oo (×4)\n"
+    << "\n"
+    << "Where were we walking together?\n"
+    << "I will see you in the end\n"
+    << "I'll take you to where you've never been\n"
+    << "And bring you back again\n"
+    << "\n"
+    << "Listen to me with your eyes\n"
+    << "I'm watching you from in the sky\n"
+    << "If you forget, I'll fade away\n"
+    << "I'm asking you to let me stay\n"
+    << "\n"
+    << "So bathe me in your magic light\n"
+    << "And keep it on in darkest night\n"
+    << "I need you here to keep me strong\n"
+    << "To live my life and sing along\n"
+    << "\n"
+    << "I'm waiting with you wide awake\n"
+    << "Like your expensive poison snake\n"
+    << "You found me here inside a dream\n"
+    << "Walk through the fire, straight to me\n" << std::endl;
 
-    cout << "=== EDITOR DE EXPRESSOES ARITMETICAS ===\n";
-    cout << "Digite os comandos (INICIO para comecar, FIM para sair):\n\n";
-
-    while (getline(cin, linha)) {
-        if (limparEConverter(linha) == "FIM") break;
-        processarComando(calc, linha);
-    }
-
-    if (calc.inicializada) {
-        destruir(calc.historico);
-    }
-
-    cout << "\nPrograma finalizado.\n";
     return 0;
 }

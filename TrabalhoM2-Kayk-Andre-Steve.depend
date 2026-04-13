@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1776105357 source:/home/cartola/gitclones/T1-M2-EstruturaDeDados/main.cpp
+	<iostream>
+	<string>
+	"calculadora_logic.h"
+
+1776104812 /home/cartola/gitclones/T1-M2-EstruturaDeDados/calculadora_logic.h
+	"pilha.h"
+	<string>
+	<iostream>
+	<iomanip>
+	<algorithm>
+
+1776104812 /home/cartola/gitclones/T1-M2-EstruturaDeDados/pilha.h
+	<iostream>
+
