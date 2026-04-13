@@ -24,7 +24,7 @@ void criar(Pilha<T> &p) {
 }
 
 template <typename T>
-bool estaVazia(const Pilha<T> &p) {
+bool estaVazia(Pilha<T> p) {
     return p.topoPilha == nullptr;
 }
 
@@ -57,13 +57,13 @@ void destruir(Pilha<T> &p) {
 }
 
 template <typename T>
-T recuperarTopo(const Pilha<T> &p) {
+T recuperarTopo(Pilha<T> p) {
     if (estaVazia(p)) throw "Pilha vazia.";
     return p.topoPilha->dado;
 }
 
 template <typename T>
-T recuperarPosicao(const Pilha<T> &p, int pos) {
+T recuperarPosicao(Pilha<T> p, int pos) {
     if (pos < 1 || pos > p.quantidade) throw "Posicao inexistente.";
 
     No<T>* atual = p.topoPilha;
@@ -74,7 +74,7 @@ T recuperarPosicao(const Pilha<T> &p, int pos) {
 }
 
 template <typename T>
-bool existeElemento(const Pilha<T> &p, T elem) {
+bool existeElemento(Pilha<T> p, T elem) {
     No<T>* atual = p.topoPilha;
     while (atual != nullptr) {
         if (atual->dado == elem) return true;
