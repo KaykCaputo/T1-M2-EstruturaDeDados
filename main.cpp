@@ -11,6 +11,7 @@ int main() {
 
     cout << "=== EDITOR DE EXPRESSOES ARITMETICAS ===\n";
     cout << "Digite os comandos (INICIO para comecar, FIM para sair):\n\n";
+    cout << "Comandos: \nSOMA(X)\nSUBTRAI(X)\nDIVIDE(X)\nMULTIPLICA(X)\nPARCELAS\nIGUAL\nZERA \n\n";
 
     while (getline(cin, linha)) {
         if (limparEConverter(linha) == "FIM") break;
